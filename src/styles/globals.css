@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fullscreen monitor styles */
+@import './fullscreenMonitor.css';
+
+:root {
+  --background: #f4f4f4;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom modal styles to ensure they work in fullscreen mode */
+.modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 999999 !important;
+  backdrop-filter: blur(3px) !important;
+}
+
+/* Ensure modal content is always visible */
+.modal-content {
+  position: relative !important;
+  z-index: 999999 !important;
+}
+
+/* Ensure modal works in fullscreen test mode */
+body.test-active .modal-overlay {
+  z-index: 999999 !important;
+}
+
+body.test-active .modal-content {
+  z-index: 999999 !important;
+}

@@ -1,0 +1,160 @@
+[
+    {
+        "_id": "67e57f1a502466e6c314c7e6",
+        "testName": "Sample III CSE 2026",
+        "categories": [
+            {
+                "categoryName": "Coding",
+                "questions": [
+                    {
+                        "question": "What does HTML stand for?",
+                        "options": [
+                            "Hyper Text Markup Language",
+                            "High Tech Multi Language",
+                            "Hyper Transfer Markup Language",
+                            "None of the above"
+                        ],
+                        "correctAnswer": "Hyper Text Markup Language",
+                        "_id": "67e57f1a502466e6c314c7e9"
+                    },
+                    {
+                        "question": "What is the main use of CSS?",
+                        "options": [
+                            "Styling",
+                            "Logic",
+                            "Database",
+                            "Authentication"
+                        ],
+                        "correctAnswer": "Styling",
+                        "_id": "67e57f1a502466e6c314c7ea"
+                    }
+                ]
+            },
+            {
+                "categoryName": "Math",
+                "questions": [
+                    {
+                        "question": "What is 5 + 7?",
+                        "options": [
+                            "10",
+                            "11",
+                            "12",
+                            "13"
+                        ],
+                        "correctAnswer": "12",
+                        "_id": "67e57f1a502466e6c314c7eb"
+                    },
+                    {
+                        "question": "What is the square root of 64?",
+                        "options": [
+                            "6",
+                            "7",
+                            "8",
+                            "9"
+                        ],
+                        "correctAnswer": "8",
+                        "_id": "67e57f1a502466e6c314c7ec"
+                    }
+                ]
+            },
+            {
+                "categoryName": "Behavioral",
+                "questions": [
+                    {
+                        "question": "What is an important quality in teamwork?",
+                        "options": [
+                            "Communication",
+                            "Selfishness",
+                            "Ignoring others",
+                            "Procrastination"
+                        ],
+                        "correctAnswer": "Communication",
+                        "_id": "67e57f1a502466e6c314c7ee"
+                    },
+                    {
+                        "question": "How do you handle workplace conflict?",
+                        "options": [
+                            "Avoid it",
+                            "Discuss and resolve",
+                            "Ignore it",
+                            "Escalate it"
+                        ],
+                        "correctAnswer": "Discuss and resolve",
+                        "_id": "67e57f1a502466e6c314c7ef"
+                    }
+                ]
+            },
+            {
+                "categoryName": "Aptitude",
+                "questions": [
+                    {
+                        "question": "If a train travels 60 miles in 1 hour, how far will it travel in 3 hours?",
+                        "options": [
+                            "120 miles",
+                            "150 miles",
+                            "180 miles",
+                            "200 miles"
+                        ],
+                        "correctAnswer": "180 miles",
+                        "_id": "67e57f1a502466e6c314c7f1"
+                    },
+                    {
+                        "question": "What comes next in the sequence: 2, 4, 8, 16, ?",
+                        "options": [
+                            "24",
+                            "32",
+                            "48",
+                            "64"
+                        ],
+                        "correctAnswer": "32",
+                        "_id": "67e57f1a502466e6c314c7f2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "67e61534502466e6c314c7f3",
+        "testName": "Sample hi",
+        "categories": [
+            {
+                "categoryName": "Coding",
+                "questions": [
+                    {
+                        "question": "What is the capital of France?",
+                        "options": [
+                            "London",
+                            "Paris",
+                            "Berlin",
+                            "Madrid"
+                        ],
+                        "correctAnswer": "Paris",
+                        "_id": "67e61534502466e6c314c7f5"
+                    },
+                    {
+                        "question": "What does HTML stand for?",
+                        "options": [
+                            "Hyper Text Markup Language",
+                            "High Tech Multi Language",
+                            "Hyper Transfer Markup Language",
+                            "None of the above"
+                        ],
+                        "correctAnswer": "Hyper Text Markup Language",
+                        "_id": "67e61534502466e6c314c7f6"
+                    },
+                    {
+                        "question": "What is the main use of CSS?",
+                        "options": [
+                            "Styling",
+                            "Logic",
+                            "Database",
+                            "Authentication"
+                        ],
+                        "correctAnswer": "Styling",
+                        "_id": "67e61534502466e6c314c7f7"
+                    }
+                ]
+            }
+        ]
+    }
+]
