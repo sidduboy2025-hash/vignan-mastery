@@ -397,6 +397,17 @@ const AssessmentSlug = () => {
             <div className="mt-6">
               <RankCard studentId={student._id} test={test} /> {/* Insert your rank data prop here */}
             </div>
+            
+            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <p className="text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>
+                  <strong>Note:</strong> To view your answers with the correct solutions, please visit your dashboard and download the complete report.
+                </span>
+              </p>
+            </div>
 
             <div className="mt-6 space-y-10 font-sans">
               {test.categories.map((category) => (
@@ -404,7 +415,6 @@ const AssessmentSlug = () => {
                   <h2 className="text-3xl font-semibold font-mono uppercase text-left text-neutral-800 mb-2">{category.categoryName} - Review</h2>
                   {category.questions.map((question) => {
                     const selected = selectedAnswers[category.categoryName]?.[question._id]?.answer;
-                    const isCorrect = selected === question.correctAnswer;
 
                     return (
                       <div key={question._id} className="p-4 border rounded-lg mb-4 bg-white shadow-sm">
@@ -412,19 +422,16 @@ const AssessmentSlug = () => {
                         <ul className="mt-2 space-y-2">
                           {question.options.map((option, idx) => {
                             const isUserAnswer = selected === option;
-                            const isCorrectAnswer = question.correctAnswer === option;
 
                             return (
                               <li key={idx}>
                                 <div
                                   className={`px-3 py-2 rounded border 
-                                    ${isCorrectAnswer ? 'bg-green-100 border-green-600 text-green-800' : ''}
-                                    ${isUserAnswer && !isCorrect ? 'bg-red-100 border-red-600 text-red-800' : ''}
+                                    ${isUserAnswer ? 'bg-blue-100 border-blue-600 text-blue-800' : ''}
                                   `}
                                 >
                                   {option}
-                                  {isCorrectAnswer ? " (Correct Answer)" : ""}
-                                  {isUserAnswer && !isCorrect ? " (Your Answer)" : ""}
+                                  {isUserAnswer ? " (Your Answer)" : ""}
                                 </div>
                               </li>
                             );
