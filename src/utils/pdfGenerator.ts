@@ -62,7 +62,7 @@ const calculateRankings = async (student: Student, test: Test, assignedTest: any
 
         const start = new Date(studentTest.start || '').getTime();
         const submittedAt = studentTest.submittedAt ? new Date(studentTest.submittedAt).getTime() : 0;
-        const timeLimit = 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+        const timeLimit = 30 * 60 * 1000; // 30 minutes in milliseconds
         const timeTaken = submittedAt - start;
 
         return {

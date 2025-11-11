@@ -96,7 +96,7 @@ const RankCard = ({ studentId, test }: { studentId: string; test: Test }) => {
 
                         const start = new Date(test.start).getTime();
                         const submittedAt = test.submittedAt ? new Date(test.submittedAt).getTime() : 0;
-                        const timeLimit = test.timeLimit || 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+                        const timeLimit = test.timeLimit || 30 * 60 * 1000; // 30 minutes in milliseconds
                         const timeTaken = submittedAt - start;
 
                         const completedOnTime = timeTaken <= timeLimit;
@@ -224,7 +224,7 @@ const RankCard = ({ studentId, test }: { studentId: string; test: Test }) => {
                             const timeTakenMs = submittedAt.getTime() - start.getTime();
                             const totalSeconds = Math.floor(timeTakenMs / 1000);
 
-                            const cappedSeconds = Math.min(totalSeconds, 3 * 60 * 60);
+                            const cappedSeconds = Math.min(totalSeconds, 30 * 60);
 
                             const hours = Math.floor(cappedSeconds / 3600);
                             const minutes = Math.floor((cappedSeconds % 3600) / 60);

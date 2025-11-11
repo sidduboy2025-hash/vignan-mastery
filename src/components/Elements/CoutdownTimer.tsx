@@ -7,7 +7,7 @@ interface CountdownTimerProps {
     isRunning: boolean;
 }
 
-const CountdownTimer = ({ slug, duration = 3 * 60 * 60, onComplete, isRunning }: CountdownTimerProps) => {
+const CountdownTimer = ({ slug, duration = 30 * 60, onComplete, isRunning }: CountdownTimerProps) => {
     const timerKey = `timer-${slug}`;
     const [timeLeft, setTimeLeft] = useState<number>(() => {
         const saved = localStorage.getItem(timerKey);
